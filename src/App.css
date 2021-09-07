@@ -1,5 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 .App {
+  color: #EDAA29;
+  background-color: #EDAA29;
+  width : 100%;
+  max-height: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0px;
+}
+
+.html_container{
+  background-color: #EDAA29;
+  max-height: 100%;
+  height: 100%;
+  width: 93%;
+  padding-left: 7% !important;
+  left: 0;
+  top: 0;
+  position: absolute;
+  flex: auto;
+  overflow-y: hidden;
+
+}
+
+.terminal_content{
+  max-height: inherit;
+  z-index: 0;
+  border-top: 20px solid blue;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  border-radius: 10px ;
+  height: 65%; 
+  width: 60%;
+  border-radius: 0px 0px 25px 25px ;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  
+}
+
+.content{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.folder_present{
+  max-height: inherit;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 10px ;
+  height: 40%;
+  max-height: 40%;
+  width: 100%;
+  top: 30%;
+  left: -10%;
+  z-index: 1;
+  object-fit: contain;
+  position: relative;
+  border-radius: 0px 0px 25px 25px ;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background: #EDAA29;
+  color : black;
+  box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: auto;
+  width: 100%;
+  height: 60px;
+  left: 1%;
+  top: 8%;
+  position: relative;
+  text-align: left;
+  margin-bottom: 8%;
+  color: inherit;
+
+}
+
+.linkedin_logo{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 5%;
+  
+}
+
+.github_logo{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 13%;
+}
+
+.sidebar{
+  width: 20%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.menu_bar{
+  display: flex;
+  margin-left: 10%;
+
+}
+
+.bar_text{
+  display: flex;
+  flex-direction: row;
+  top: 5%;
+  align-items: center;
   text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  font-style: 'Poppins' sans-serif;
+  font-weight: 400;
+  display: inline;
+  line-height: 50%;
+  color: #000000;
+}
+
+.bar_text_about{
+  top: 5%;
+  font-style: normal;
+  font-weight: normal;
+  font-style: 'Poppins' sans-serif;
+  font-weight: 400;
+  font-size : 30px;
+  text-align: right;
+  line-height: 50%;
+  color: #000000;
+  
+}
+a{
+  color: black;
+}
+
+.logo{
+  position: absolute;
+  width: 20%;
+  height: 80%;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50%;
+  /* or 82px */
+
+  text-align: center;
+
+  color: #000000;
 }
 
 .App-logo {
@@ -25,7 +181,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #000000;
 }
 
 @keyframes App-logo-spin {
