@@ -2,10 +2,9 @@ import "./terminal.css"
 import { XTerm } from 'xterm-for-react'
 import { FitAddon} from 'xterm-addon-fit'
 import { WebLinksAddon } from 'xterm-addon-web-links';
-import React , {useEffect , useState, useContext} from 'react'
+import React , { useState, useContext} from 'react'
 import LocationContext from "./LocationContext"
 import fileNameContext from "./FileNameContext"
-import LocationStackContenxt from "./LocationStackContext"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -13,21 +12,11 @@ import Row from 'react-bootstrap/Row';
 function Terminal(props){
     const {location , changeLocation} = useContext(LocationContext);
     const {filename , changeFileName} = useContext(fileNameContext);
-    const {locationStack , changeLocationStack} = useContext(LocationStackContenxt);
     const [activated_by_cat , toggleActive] = useState(false);
     const [first_load , setFirstLoad] = useState(true);
     const [command_stack , setCommandStack] = useState([]);
     const [current_ls_prompt , setCurrentLsPrompt] = useState("\r\n\n.\r\nabout\r\nexperience\r\nfuntoids\r\n");
 
-
-
-    function checkLastLocation(){
-        if(locationStack.length > 0){
-            let last_location = locationStack[locationStack.length - 1];
-            return last_location
-        }
-        return null; 
-    }
 
 
     function addCommand(command){
@@ -48,18 +37,8 @@ function Terminal(props){
     var personal_ls_prompt = "\r\n\n..\r\nanomaly_detection.txt\r\nlmaoo.txt\r\ntimey.txt\r\ndewi.txt\r\nforesight.txt\r\n"
     var professional_ls_prompt = "\r\n\n..\r\nsummer_games.txt\r\nresearch_assistant.txt\r\nresearch_and_development_intern.txt\r\nsoftware_development_intern.txt\r\n"
     var about_ls_prompt = "\r\n\n..\r\npersonal_statement.txt\r\ncontacts.txt\r\n"
-    var valid_ls_files = ["about.txt"] 
     var ways_to_type_poo = ["poo", "POO", "POOP", "poop", "bigpoo" , "smallpoo", "poooooooooooooooooooop", "pooooooooooooo", "SHIT", "excretion"]
-    var about_txt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\
-     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n";
-    var experience_txt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\
-     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n";
     
-    var personal_txt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n";
-
-    var funtoids_txt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n";
 
     var welcome_prompt = "\r\n\nHELLLLLLLLLLLLLLLLLLLOO \r\nWelcome to my website, feel free to navigate around\
         \r\nThere are two ways you can navigate the site\
@@ -168,8 +147,6 @@ function Terminal(props){
         "funtoids": valid_funtoids_files,
 
     }
-       
-    var about_ls_prompt = "\r\n\nabout.txt\r\n"
     const fitaddon = new FitAddon();
     const webLinkAddon = new WebLinksAddon();
     const xtermRef = React.useRef(null);
@@ -195,7 +172,7 @@ function Terminal(props){
                             current_command_stack_index++;
                         }
                         else{
-                            var command = command_stack[0];
+                            command = command_stack[0];
                             current_command_stack_index = 1;
                         }
                         if(current_string.length > 0){
