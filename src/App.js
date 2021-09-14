@@ -11,15 +11,9 @@ import Folder from './Folder';
 import { LocationProvider } from './LocationContext';
 import { FileNameContextProvider } from './FileNameContext';
 import { LocationStackContextProvicer } from './LocationStackContext';
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from 'react-router-dom';
-import {React,useState , useContext} from 'react';
-import { Navbar, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import Draggable, {DraggableCore} from 'react-draggable';
+import {React,useState} from 'react';
+import { Navbar} from 'react-bootstrap';
+import Draggable from 'react-draggable';
 
 
 function App() {

@@ -1,30 +1,18 @@
-import logo from './logo.svg';
-import github from './github.svg';
-import linkedin from './linkedin.svg';
 import './App.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
-import Terminal from './Terminal';
-import about_photo from './about_photo.jpeg';
 import './folder.css'
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from 'react-router-dom';
 import LocationContext from './LocationContext';
 import FileNameContext  from './FileNameContext';
-import {React , useContext , useState} from 'react';
+import {React , useContext} from 'react';
 import text_file from './text_file.svg';
 import folder   from './folder.svg';
 
 
 function Folder(){
     const {location , changeLocation}  = useContext(LocationContext);
-    const {filename , changeFileName} = useContext(FileNameContext);
+    const {changeFileName} = useContext(FileNameContext);
     var content;
     var professional_files = ["summer_games.txt" , "research_assistant.txt" , "research_and_development_intern.txt", "software_development_intern.txt"];
     var personal_project_files = ["anomaly_detection.txt", "lmaooo.txt" ,"document_scanner.txt" ,"timey.txt" , "dewi.txt" , "foresight.txt"];
@@ -101,7 +89,7 @@ function Folder(){
     else if(location === "professional"){
 
        content = []
-       professional_files.map(function(file , index){
+       professional_files.map(function(file){
            console.log(file);
            content.push(
                <Col sm={4} key={file}>
@@ -118,7 +106,7 @@ function Folder(){
     }
     else if(location === "personal"){
         content = []
-        personal_project_files.map(function(file , index){
+        personal_project_files.map(function(file){
             console.log(file);
             content.push(
                 <Col sm={4} key={file}>
@@ -135,7 +123,7 @@ function Folder(){
     }
     else if(location === "funtoids"){
         content = []
-        funtoid_files.map(function(file , index){
+        funtoid_files.map(function(file){
             console.log(file);
             content.push(
                 <Col sm={4} key={file}>
@@ -152,7 +140,7 @@ function Folder(){
     }
     else if(location === "home"){
         content = []
-        home_folders.map(function(file , index){
+        home_folders.map(function(file){
             console.log(file);
             content.push(
                 <Col sm={4} key={file}>

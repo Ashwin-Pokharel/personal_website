@@ -1,13 +1,13 @@
 <svg width="344" height="376" viewBox="0 0 344 376" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="344" height="376" fill="#E5E5E5"/>
 <g filter="url(#filter0_d)">
-<path d="M319 206.5C319 289.492 251.075 357 167 357C82.9248 357 15 289.492 15 206.5C15 123.508 82.9248 56 167 56C251.075 56 319 123.508 319 206.5Z" stroke="black" stroke-width="30" shape-rendering="crispEdges"/>
+<path d="M319 206.5C319 289.492 251.075 357 167 357C82.9248 357 15 289.492 15 206.5C15 123.508 82.9248 56 167 56C251.075 56 319 123.508 319 206.5Z" stroke="black" strokeWidth="30" shapeRendering="crispEdges"/>
 </g>
 <path d="M156.529 223.336H67.1738L47.1055 279H18.1016L99.5469 65.7188H124.156L205.748 279H176.891L156.529 223.336ZM75.6699 200.191H148.18L111.852 100.436L75.6699 200.191Z" fill="black"/>
 <path d="M202.118 285.287V366H174.931V159.828H250.971C273.533 159.828 291.186 165.587 303.93 177.104C316.768 188.62 323.188 203.866 323.188 222.841C323.188 242.854 316.91 258.288 304.354 269.145C291.894 279.906 274.005 285.287 250.688 285.287H202.118ZM202.118 263.056H250.971C265.508 263.056 276.648 259.657 284.389 252.86C292.13 245.969 296 236.057 296 223.124C296 210.852 292.13 201.034 284.389 193.671C276.648 186.308 266.028 182.484 252.528 182.201H202.118V263.056Z" fill="black"/>
 <defs>
-<filter id="filter0_d" x="-4" y="41" width="342" height="339" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter0_d" x="-4" y="41" width="342" height="339" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="2"/>
