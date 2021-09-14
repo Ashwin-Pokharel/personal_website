@@ -1,45 +1,86 @@
 .folderTop{
     background-color: blue;
     width: 100%;
-    height: 20%;
+    height: 7%;
     color: white;
+    padding: 0px !important;
+    margin: 0px !important;
     text-align: center;
     margin-left: 0px !important;
     margin-right: 0px !important;
     font-family: Menlo;
     font-style: normal;
     font-weight: bold;
+    overflow-x: hidden;
+    overflow-y: hidden;
     
 }
 .folderContainer{
     padding: 0px !important;
     max-height: 100% !important;
+    background-color :#edaa29; 
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 .folderContent{
-    border: 1px solid purple;
-    margin: 0px;
-    min-height: 100%;
-    max-height: inherit;
+    justify-content: left !important;
+    max-height: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100% !important;
+    max-width: 100%;
     object-fit: contain;
-    
-}
+    overflow-y: hidden;
+    background-color: #edaa29;
 
-.folderInnerContent{
-    max-width: 100%;
-    max-width: 100%;
 }
 
 
 img{
     object-fit: contain;
-    display: block;
-    width: 100%;
-    max-height: stretch; /* remove extra space below image */
+    padding: 2%;
+    padding-bottom: 2%;
 }
 
-.ReactCrop__image {
-    display: block;
-    max-width: 100%;
-    max-height: stretch;
+.box{
+    border: 3px solid black;
+    z-index: 9;
 }
+
+.textFile{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.file_combo{
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+    width: 35%;
+    height: 35%;
+    z-index: 0;
+    position: relative;
+}
+
+.file_figure{
+    max-width: auto;
+}
+
+.figure_caption{
+    color: black;
+    text-align: center;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
