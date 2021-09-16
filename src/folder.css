@@ -31,7 +31,7 @@
     width: 100% !important;
     max-width: 100%;
     object-fit: contain;
-    overflow-y: hidden;
+    overflow-y: scroll;
     background-color: #edaa29;
 
 }
