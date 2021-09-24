@@ -44,7 +44,8 @@ function Terminal(props){
         \r\nThere are two ways you can navigate the site\
         \r\nif you know how use the terminal then you can navigate the site using the standard unix commands\
         \r\nYou can use the 'help' command to get additional info on supported commands. try playing around with it and maybe you will find some secrets???\r\nEven if you are unsure give it a whirl , if it breaks or you get confused just reload the page.\
-        \r\nYou can also just navigate the site using the navigation bar and folder if you dont know how to use the terminal. Good luck :)\n"
+        \r\nYou can also just navigate the site using the navigation bar and folder if you dont know how to use the terminal. Good luck!!! :)\
+        \r\n\n Also this website is in progress , with proper text wrapping and mobile support coming soon :) "
 
     var summer_games_txt = "\r\n\n Booz Allen Hamilton\t\t\tJune/2021 - August/2021\r\n\n- Engineered an Anomaly Detection Pipeline using open-source commercial flight data.\r\n- Taught non-technical members of the team several tools such as Git and Python compared various machine learning techniques to determine the best one for the Pipeline.\r\n- Implemented a GAN network for Anomaly Detection and synthetic data generation.\n"
     var research_assistant_txt = "\r\n\nGMU Schar School of Policy and Government\r\nSemptember/2020 - June/2021\r\n\n- Mapped and combined multiple large data sources.\r\n- Wrote a python script to automate data combination.\r\n- Researched use of OCR with entity recognition for automation.\n"
