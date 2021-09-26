@@ -46,6 +46,10 @@
   padding: 0px !important;
 }
 
+.terminal{
+  padding: 0px !important;
+}
+
 .content{
   overflow: hidden;
   height: 100%;
