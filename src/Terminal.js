@@ -152,7 +152,6 @@ function Terminal(props){
     const webLinkAddon = new WebLinksAddon();
     const xtermRef = React.useRef(null);
     let resizeWindow = ()=>{
-        console.log("resized the fucking window")
         fitaddon.fit();
     }
 
